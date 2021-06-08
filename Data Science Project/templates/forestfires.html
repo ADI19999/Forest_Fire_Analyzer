@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forest Fire Analyzer</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href = "#">
+                <h3>Forest Fire Analyzer</h3>
+            </a>
+        </nav>
+        <div class="card">
+            <div class="card-body">
+                <form method="POST">
+                    <div class="input-group-mb3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputgroupselect01">X-Axis Coordinate</label>
+                        </div>
+                        <select class="custom-select" required name="X" id="X">
+                            <option disabled selected>Choose..</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+                    <div class="input-group-mb3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputgroupselect01">Y-Axis Coordinate</label>
+                        </div>
+                        <select class="custom-select" required name="Y" id="Y">
+                            <option disabled selected>Choose..</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+                    <div class="input-group-mb3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputgroupselect01">Month</label>
+                        </div>
+                        <select class="custom-select" required name="month" id="month">
+                            <option disabled selected>Choose..</option>
+                            <option value="1">Jan</option>
+                            <option value="2">Feb</option>
+                            <option value="3">Mar</option>
+                            <option value="4">Apr</option>
+                            <option value="5">May</option>
+                            <option value="6">Jun</option>
+                            <option value="7">Jul</option>
+                            <option value="8">Aug</option>
+                            <option value="9">Sep</option>
+                            <option value="10">Oct</option>
+                            <option value="11">Nov</option>
+                            <option value="12">Dec</option>
+                        </select>
+                    </div>
+                    <div class="input-group-mb3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputgroupselect01">Day</label>
+                        </div>
+                        <select class="custom-select" required name="day" id="day">
+                            <option disabled selected>Choose..</option>
+                            <option value="1">Sun</option>
+                            <option value="2">Mon</option>
+                            <option value="3">Tue</option>
+                            <option value="4">Wed</option>
+                            <option value="5">Thu</option>
+                            <option value="6">Fri</option>
+                            <option value="7">Sat</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="">FFMC Index</span>
+                        </div>
+                        <input type="text" name="FFMC" required class = "form-control">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="">DMC Index</span>
+                        </div>
+                        <input type="text" name="DMC" required class = "form-control">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="">DC Index</span>
+                        </div>
+                        <input type="text" name="DC" required class = "form-control">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="">ISI Index</span>
+                        </div>
+                        <input type="text" name="ISI" required class = "form-control">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="">Temprature(in degree celsius)</span>
+                        </div>
+                        <input type="text" name="temp" required class = "form-control">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="">Relative Humidity(in %)</span>
+                        </div>
+                        <input type="text" name="RH" required class = "form-control">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="">Wind(in km/hr)</span>
+                        </div>
+                        <input type="text" name="Wind" required class = "form-control">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="">Rain (in mm/m2)</span>
+                        </div>
+                        <input type="text" name="Rain" required class = "form-control">
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <br><h4><b>{{pred}}</b></h4>
+    </body>
+</html>
